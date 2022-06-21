@@ -1,0 +1,70 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+aliases:
+  approvers:
+      - davidvossel
+      - vladikr
+      - rmohr
+      - stu-gott
+      - fabiand
+      - mazzystr
+      - danielBelenky
+      - AlonaKaplan
+      - dhiller
+      - jean-edouard
+      - mhenriks
+      - enp0s3
+      - xpivarc
+  emeritus_approvers:
+      - cynepco3hahue
+      - slintes
+      - mfranczy
+      - SchSeba
+      - codificat
+      - ashleyschuett
+      - zcahana
+  code-reviewers:
+      - rmohr
+      - stu-gott
+      - vladikr
+      - dhiller
+      - vatsalparekh
+      - enp0s3
+      - jean-edouard
+      - AlonaKaplan
+      - omeryahud
+      - mhenriks
+      - maiqueb
+      - EdDev
+      - yuhaohaoyu
+      - acardace
+      - xpivarc
+      - marceloamaral
+      - vasiliy-ul
+      - iholder-redhat
+  ux-reviewers:
+      - matthewcarleton
+  test-reviewers:
+      - jerry7z
+      - ILpinto
+      - rnetser
+      - kbidarkar
+  test-approvers:
+      - ILpinto
+      - kbidarkar
+      - phoracek
+      - enp0s3
+      - xpivarc
+  network-reviewers:
+      - AlonaKaplan
+      - EdDev
+      - RamLavi
+      - alonSadan
+      - maiqueb
+      - ormergi
+      - oshoval
+      - phoracek
+      - qinqon
+      - rhrazdil
+  network-approvers:
+      - AlonaKaplan
