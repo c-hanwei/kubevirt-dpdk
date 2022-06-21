@@ -43,7 +43,6 @@ import (
 
 	"kubevirt.io/kubevirt/pkg/virt-controller/services"
 
-	netutiltype "github.com/openshift/app-netutil/pkg/types"
 	k8sv1 "k8s.io/api/core/v1"
 
 	"kubevirt.io/kubevirt/pkg/virt-launcher/virtwrap/api"
@@ -55,6 +54,7 @@ import (
 	cloudinit "kubevirt.io/kubevirt/pkg/cloud-init"
 	"kubevirt.io/kubevirt/pkg/config"
 
+	netutiltype "github.com/openshift/app-netutil/pkg/types"
 	containerdisk "kubevirt.io/kubevirt/pkg/container-disk"
 	"kubevirt.io/kubevirt/pkg/emptydisk"
 	ephemeraldisk "kubevirt.io/kubevirt/pkg/ephemeral-disk"
@@ -1727,6 +1727,7 @@ func Convert_v1_VirtualMachineInstance_To_api_Domain(vmi *v1.VirtualMachineInsta
 				return fmt.Errorf("Valid memory is required for vhostuser interface to add NUMA cells")
 			}
 		}
+
 	}
 
 	domain.Spec.Devices.HostDevices = append(domain.Spec.Devices.HostDevices, c.GenericHostDevices...)

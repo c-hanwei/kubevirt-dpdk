@@ -29,7 +29,6 @@ import (
 	"context"
 	"encoding/xml"
 	"fmt"
-	netutiltype "github.com/openshift/app-netutil/pkg/types"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -39,10 +38,11 @@ import (
 	"sync"
 	"time"
 
+	netutil "github.com/openshift/app-netutil/lib/v1alpha"
+	netutiltype "github.com/openshift/app-netutil/pkg/types"
 	"kubevirt.io/kubevirt/pkg/virt-launcher/virtwrap/device/hostdevice/generic"
 	"kubevirt.io/kubevirt/pkg/virt-launcher/virtwrap/device/hostdevice/gpu"
 
-	netutil "github.com/openshift/app-netutil/lib/v1alpha"
 	"kubevirt.io/kubevirt/pkg/downwardmetrics"
 	"kubevirt.io/kubevirt/pkg/network/cache"
 	"kubevirt.io/kubevirt/pkg/util/hardware"
